@@ -1,0 +1,18 @@
+@import "tailwindcss";
+.bgclr {
+    @apply bg-[#2C4BFF];
+  }
+.btnclr{
+    @apply text-white font-semibold py-2 px-4 rounded shadow-md hover:opacity-90 transition duration-300 ease-in-out bg-[#2C4BFF];
+}
+.loginclor{
+    @apply text-white font-semibold py-2 px-4 rounded shadow-md hover:opacity-90 transition duration-300 ease-in-out bg-[#2C4BFF];
+}
+.forgotbtn{
+    @apply text-sm font-medium hover:underline text-gray-500;
+}
+.btnbtn {
+    @apply text-white font-semibold py-2 px-5 rounded-md bg-[#2C4BFF] shadow-md hover:shadow-lg hover:scale-[1.03] active:scale-95 transition-all duration-300 ease-in-out;
+}
+  
+  
