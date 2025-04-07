@@ -31,6 +31,12 @@ const NavBar = () => {
     return <Navigate to={"/auth"} />;
   }
   const navigate = useNavigate();
+
+
+  const connectFacebook = () => {
+    window.location.href = "http://localhost:4000/api/v1/facebook/login";
+  };
+  
   return (
     <div className="grid grid-cols-[10%_auto_auto] items-center px-6 py-2 bg-white shadow-md">
       {/* Logo */}
@@ -51,7 +57,7 @@ const NavBar = () => {
 
       {/* Right Side: Button + Profile Pic */}
       <div className="flex items-center justify-end space-x-4">
-        <button className="btnbtn flex items-center gap-2">
+        <button onClick={()=>{connectFacebook()}} className="btnbtn flex items-center gap-2">
           <FontAwesomeIcon icon={faPlus} />
           New
         </button>
